@@ -1,0 +1,1 @@
+window.__NUXT__={};window.__NUXT__.config={public:{gtm:{devtools:true,id:"GTM-N35WQXM"}},app:{baseURL:"/",buildId:"da8e713c-4fbc-42d8-ba16-b493c408809e",buildAssetsDir:"ai-voice-models/_nuxt",cdnURL:""}}
