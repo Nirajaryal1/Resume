@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj Aryal - Resume</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 32px;
+        }
+        p {
+            color: #666;
+            margin: 10px 0 30px 0;
+            font-size: 16px;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a, button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        .btn-secondary:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+        .divider {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Niraj Aryal</h1>
+        <p>Operations, HR & Project Management Professional</p>
+        <p>Data Collection Specialist at Tesla | AI Enthusiast | Founder</p>
+        
+        <div class="button-group">
+            <a href="/resume" class="btn-primary" target="_blank">📄 View Resume (PDF)</a>
+            <button class="btn-secondary" onclick="downloadResume()">⬇️ Download Resume</button>
+        </div>
+        
+        <hr class="divider">
+        
+        <div style="text-align: left; color: #555; line-height: 1.8;">
+            <h3>Quick Links</h3>
+            <p>
+                📧 <a href="mailto:aryalniraj1@gmail.com" style="color: #667eea;">aryalniraj1@gmail.com</a><br>
+                📱 (650) 619-8773<br>
+                🔗 <a href="https://linkedin.com/in/aryalniraj1" style="color: #667eea;" target="_blank">LinkedIn</a><br>
+                📍 Palo Alto, CA
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = '/resume';
+            link.download = 'Niraj_Aryal_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

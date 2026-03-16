@@ -1,4 +1,2 @@
 flask
 fpdf
-requests
-beautifulsoup4
